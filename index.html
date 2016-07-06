@@ -1,10 +1,13 @@
 <html>
+
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="node_modules/highlight/lib/vendor/highlight.js/styles/default.css"></link>
+    <!--link rel="stylesheet" href="node_modules/highlight/lib/vendor/highlight.js/styles/default.css"></link-->
+    <!--link rel="stylesheet" href="node_modules/highlight/lib/vendor/highlight.js/styles/default.css"></link-->
   </head>
   <body>
-  <pre><code class="sql">
+  <pre>
+    <code class="sql">
 SELECT CustomerName,City FROM Customers;
 
 CREATE TABLE Persons
@@ -21,14 +24,15 @@ WHERE City <> 'London'
 
 SELECT EmployeeID, FirstName, LastName, HireDate, City FROM Employees
 WHERE HireDate >= '1-july-1993'
-  </code></pre>
-    <!--script type="text/javascript" src="node_modules/highlight/lib/highlight.js"></script-->
-    <script type="text/javascript" src="node_modules/highlight/lib/vendor/highlight.js/highlight.pack.js"></script>
-    <!--script>hljs.initHighlightingOnLoad();</script-->
-    <pre>
+    </code>
+  </pre>
+    <!--pre>
       <code>
         <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
       </code>
-    </pre>
+    </pre-->
+    <link rel="stylesheet" href="./node_modules/highlight.js/styles/rainbow.css"></link>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript" src="node_modules/highlight.js/lib/highlight.js"></script>
   </body>
 </html>
